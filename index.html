@@ -13,53 +13,54 @@
       background-color: #f9fafb;
       color: #1f2937;
     }
+    header, nav, section, footer {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
     header {
       background-color: #d8f3dc;
-      padding: 2rem;
       text-align: center;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.75rem;
       margin-bottom: 0.5rem;
     }
     header p {
       font-size: 1.25rem;
     }
-    .cta-buttons {
-      margin-top: 1.5rem;
+    nav {
+      text-align: center;
+      background-color: #b7e4c7;
     }
-    .cta-buttons button {
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      margin: 0 0.5rem;
-      border: none;
-      border-radius: 0.5rem;
-      background-color: #40916c;
-      color: white;
-      cursor: pointer;
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      color: #1f2937;
     }
-    .features, .pricing, .about, .footer {
+    .intro {
       padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
+      background-color: #ffffff;
     }
-    .features h2, .pricing h2, .about h2 {
+    .scenario {
+      background-color: #e9f5ec;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .feature-section, .about-section {
+      padding: 3rem 2rem;
+    }
+    h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
-    }
-    .feature-item {
-      margin-bottom: 1.5rem;
-    }
-    .pricing-tier {
-      background-color: #e9f5ec;
-      padding: 1.5rem;
-      border-radius: 1rem;
-      margin-bottom: 1.5rem;
     }
     .footer {
       text-align: center;
       font-size: 0.9rem;
       color: #6b7280;
+      background-color: #d8f3dc;
     }
   </style>
 </head>
@@ -67,47 +68,58 @@
   <header>
     <h1>Your Child’s Personalized AI Mentor</h1>
     <p>Learn. Explore. Thrive.</p>
-    <div class="cta-buttons">
-      <button>Try Demo</button>
-      <button>View Plans</button>
-      <button>See How It Works</button>
-    </div>
   </header>
-  <section class="features">
-    <h2>Why Choose Sage?</h2>
-    <div class="feature-item">
-      <strong>💡 Personalized Learning Pathways:</strong> Sage adapts to each student’s pace, goals, and interests.
+
+  <nav>
+    <a href="#intro">Intro</a>
+    <a href="#scenarios">Scenarios</a>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <section class="intro" id="intro">
+    <h2>I imagine...</h2>
+    <p>I imagine a friendly, teacher-mentor who can gently guide a curious child through their questions about the world. A mentor who listens, adapts, explains, and encourages. I imagine Sage.</p>
+  </section>
+
+  <section class="intro" id="scenarios">
+    <h2>Life with Sage – A Few Scenarios</h2>
+    <div class="scenario">
+      <strong>🌞 Morning Curiosity:</strong>
+      <p>A child wakes up wondering why the sky is blue. Sage responds warmly, “That’s a wonderful question! Let’s explore sunlight and how it dances through the air…”</p>
     </div>
-    <div class="feature-item">
-      <strong>🧠 Emotional + Academic Intelligence:</strong> Sage checks in, encourages, and adjusts based on mood.
+    <div class="scenario">
+      <strong>📚 Homework Helper:</strong>
+      <p>A student is stuck on a math problem. Sage doesn’t just give the answer. It breaks down the steps gently, checking for understanding: “Let’s walk through this together. What do you know so far?”</p>
     </div>
-    <div class="feature-item">
-      <strong>📊 Progress Dashboards:</strong> Monitor growth with visuals, metrics, and badges.
+    <div class="scenario">
+      <strong>😔 Bad Day Comfort:</strong>
+      <p>A child is sad after a rough day. Sage notices and says, “You seem a little down. Want to talk about it first or play a game to cheer up?”</p>
     </div>
-    <div class="feature-item">
-      <strong>🔒 Safety + Privacy:</strong> Parent controls, child-safe filters, and explainable AI.
+    <div class="scenario">
+      <strong>🌎 Exploring Dreams:</strong>
+      <p>The child dreams of becoming an astronaut. Sage builds a path: “Awesome! Let’s learn about space, physics, and even what astronauts eat. One small step at a time.”</p>
     </div>
   </section>
-  <section class="pricing">
-    <h2>Plans & Pricing</h2>
-    <div class="pricing-tier">
-      <strong>Free Trial:</strong> Experience Sage for 7 days
-    </div>
-    <div class="pricing-tier">
-      <strong>Monthly Plan:</strong> $20/month for one child
-    </div>
-    <div class="pricing-tier">
-      <strong>Family Plan:</strong> $45/month for up to 3 children
-    </div>
-    <div class="pricing-tier">
-      <strong>Schools:</strong> Contact us for bulk licensing
-    </div>
+
+  <section class="feature-section" id="features">
+    <h2>What Makes Sage Special?</h2>
+    <ul>
+      <li><strong>🧭 Personalized Learning Paths:</strong> Tailors lessons to your child's pace, goals, and mood.</li>
+      <li><strong>🧠 Emotional Intelligence:</strong> Detects frustration, boredom, excitement—and adapts accordingly.</li>
+      <li><strong>📈 Progress Dashboards:</strong> Visual reports, badges, and growth metrics for parents and students.</li>
+      <li><strong>🎨 Creative Expression:</strong> Allows drawing, storytelling, music composition, and more.</li>
+      <li><strong>🎯 Goal Setting:</strong> Helps children set and achieve long-term learning or career goals.</li>
+      <li><strong>🔐 Safety-First Design:</strong> Age-appropriate content, privacy controls, and respectful behavior built-in.</li>
+    </ul>
   </section>
-  <section class="about">
-    <h2>About Us</h2>
-    <p>Sage is designed to nurture curiosity and confidence in every learner. Our team blends education, AI, and child psychology to build the most thoughtful AI mentor possible.</p>
-    <p><strong>Our Promise:</strong> Safe, personalized, and empowering learning for every child.</p>
+
+  <section class="about-section" id="about">
+    <h2>About Sage</h2>
+    <p>Sage is the culmination of decades of educational insights, child psychology, and artificial intelligence fused into one gentle, ever-ready companion for young learners. Designed by passionate educators and developers, Sage is not just a tool—it’s a mentor, a friend, and a guide.</p>
+    <p>Our promise: Every child deserves not only an education but a companion that sees their potential, meets them where they are, and walks with them through their learning journey.</p>
   </section>
+
   <footer class="footer">
     &copy; 2025 Sage. All rights reserved. | Privacy | Terms | Contact
   </footer>
